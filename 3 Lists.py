@@ -79,3 +79,27 @@ print(garden)
 
 #GROWING A LIST: PLUS (+)
 #When we want to add multiple items to a list, we can use + to combine two lists, aka concatenation
+#Below, we have a list of items sold at a bakery called items_sold
+
+items_sold = ["cake", "cookie", "bread"]
+
+#Suppose the bakery wants to start selling "biscuit" and "tart"
+
+items_sold_new = items_sold + ["biscuit", "tart"]
+print(items_sold_new)
+
+
+
+#ACCESSING LIST ELEMENTS
+#We are interviewing candidates for a job.
+#We will call each candidate in order, represented by a Python list:
+
+calls = ["Juan", "Zofia", "Amare", "Ezio", "Ananya"]
+
+#First we'll call "Juan", then "Zofia", etc.
+#In Python, we call the location of an element in a list its index
+#Python lists are zero-indexed. This means the first element in a list has index 0 instead of 1
+#We can select a single element from a list by using square brackets and the index of the list item.
+#If we wanted to select the third element from thee list, we'd use calls[2]:
+
+print(calls[2])
