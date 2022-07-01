@@ -103,3 +103,52 @@ calls = ["Juan", "Zofia", "Amare", "Ezio", "Ananya"]
 #If we wanted to select the third element from thee list, we'd use calls[2]:
 
 print(calls[2])
+
+#When accessing elements of a list, you must use an int as the index. If you use a float, you will get an error.
+#This can be especially tricky when using division.
+#For example print(calls[4/2]) will result in an error, because 4/2 gets evaluated to the float 2.0
+#To solve this problem, you can force the result of your division to be an int by using the int() function.
+#For example , int(5.9) and int(5.0) will both become 5
+#Therefore, calls[int(4/2)] will result in the same value as calls[2]
+
+
+
+#ACCESSING LIST ELEMENTS: NEGATIVE INDEX
+#What if we want to select the last element of a list?
+#We can use the index -1 to select the last item of a list, even when we dont know how many elements are in a list
+#example:
+
+pancake_recipe = ["eggs", "flour", "butter", "milk", "sugar", "love"]
+
+#If we select the -1 index, we get the final element, "love"
+
+print(pancake_recipe[-1])
+
+#Lets return to the garden.
+
+garden = ["Tomatoes", "Green Beans", "Cauliflower", "Grapes"]
+
+#Unfortunately, we forgot to water our cauliflower and we don't think it is going to recover.
+#Thankfully we got strawberry seeds to replace the cauliflower.
+#We need to modify the list to accommodate the change to our garden list. 
+
+garden[2] = "Strawberries"
+print(garden)
+
+#Negative indices will work as well
+
+garden[-1] = "Raspberries"
+print(garden)
+
+
+
+#SHRINKING A LIST: REMOVE
+#We can remove elements in a list using the .remove() python method
+#Suppose we have a filled list called shopping_line that represents a grocery store
+
+shopping_line = ["Cole", "Kip", "Chris", "Sylvana"]
+
+#We could remove "Chris" by using the .remove() method
+
+shopping_line.remove("Chris")
+print(shopping_line)
