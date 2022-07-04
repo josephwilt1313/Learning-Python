@@ -152,3 +152,32 @@ shopping_line = ["Cole", "Kip", "Chris", "Sylvana"]
 
 shopping_line.remove("Chris")
 print(shopping_line)
+
+
+
+#TWO DIMENSIONAL (2D) LISTS
+#Once more, let's look at a class height example.
+#Noelle is 61 inches tall, Ava is 70 inches tall, Sam is 67 inches tall, Mia is 64 inches tall.
+#Previously, we saw that we could create a list representing both Noelle's name and height:
+
+noelle = ["Noelle", 61]
+
+#We can put several of these lists into one list, such that each entry in the list represents a student and their height:
+
+heights = [["Noelle", 61], ["Ava", 70], ["Sam", 67], ["Mia", 64]]
+
+#We will often find that a two-dimensional list is a very good structure for representing grids such as games like tic-tac-toe.
+#A 2d list with three lists in each of the indices. 
+tic_tac_toe = [
+            ["X","O","X"], 
+            ["O","X","O"], 
+            ["O","O","X"]
+]
+
+#Two-dimensional lists can be accessed similar to their one-dimensional counterpart.
+#Instead of providing a single pair of brackets, we will use an additional set for each dimension past the first.
+#If we wanted to access "Noelle"'s height:
+
+#Access the sublist at index 0, and then access the 1st index of that sublist. 
+noelles_height = heights[0][1] 
+print(noelles_height)
