@@ -181,3 +181,4 @@ tic_tac_toe = [
 #Access the sublist at index 0, and then access the 1st index of that sublist. 
 noelles_height = heights[0][1] 
 print(noelles_height)
+
