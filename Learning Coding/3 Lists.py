@@ -182,3 +182,14 @@ tic_tac_toe = [
 noelles_height = heights[0][1] 
 print(noelles_height)
 
+#We can also use .remove() on a list that has duplicate elements.
+#Only the first instance of the matching element is removed:
+
+shopping_line = ["Cole", "Kip", "Chris", "Sylvana", "Chris"]
+ 
+shopping_line.remove("Chris")
+print(shopping_line)
+
+
+
+#TWO-DIMENSIONAL (2D) LISTS
