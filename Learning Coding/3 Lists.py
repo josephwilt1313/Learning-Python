@@ -190,6 +190,68 @@ shopping_line = ["Cole", "Kip", "Chris", "Sylvana", "Chris"]
 shopping_line.remove("Chris")
 print(shopping_line)
 
+#MODIFYING 2D LISTS
+#Now that we know how to access two-dimensional lists, modifying the elemenets should come naturally
+#Lets return to a classroom example, but now instead of heights or tests scores, our list stores
+#the student's favorite hobby
+
+class_name_hobbies = [["Jenny", "Breakdancing"], ["Alexus", "Photography"], ["Grace", "Soccer"]]
+
+#Jenny changed her mind and ins now more interested in meditation
+#We will need to modify the list to accommodate the change to our class_name_hobbies list.
+#To change a value in a 2D list, reassign the value using the specific index
+
+#The list of Jenny is at index 0. The hobby is at index 1.
+
+class_name_hobbies[0][1] = "Meditiation"
+print(class_name_hobbies)
 
 
-#TWO-DIMENSIONAL (2D) LISTS
+#Lets practice these skills
+#Maria is entering customer data for her web store business. We're going to help her organize her data
+#Start by turning this list of customer first names into a list called first_names
+#Ainsley, Ben, Chani, Depak
+
+first_names = ["Ainsley", "Ben", "Chani", "Depak"]
+
+#Maria wants to track all customer's preferred sizes for her clothing.
+#Create a list called preferred_size
+#Fill the new list with the following sizes: Small, Large, Medium
+
+preferred_size = ["Small", "Large", "Medium"]
+
+#Oh no! WE forgot to add Depak's size, his size is medium. Use .append() to add his size
+
+preferred_size.append("Medium")
+print(preferred_size)
+
+#Maria is having a hard time visualizing which customer is associated with each size. Lets
+#restructure our two lists into a two dimensional list to help Maria
+#In addition to the already available values, she is adding a third value for each customer
+#that reflects if they want expedited shipping on their orders
+#This will be reflected using a boolean value
+#True, False, True, False
+
+customer_data = [["Ainsley", "Small", True], ["Ben", "Large", False], ["Chani", "Medium", True], ["Depak", "Medium", False]]
+print(customer_data)
+
+#Chani reachedf out to Maria, she requested to switch to regular shipping
+#Change the data value to false
+
+customer_data[2][2] = False
+print(customer_data)
+
+#Ben reached out to Maria asking to remove his shipping option because he is not sure what type he wants
+#use the .remove() method to delete the shipping value from the sublist
+
+customer_data[1].remove(False)
+print(customer_data)
+
+#One last thing, Maria recieved new customers, Amit and Karim.
+#Add it to the end of customer data
+#Amit, Large, True
+#Karim, X-Large, False
+
+new_customer_data = [["Amit", "Large", True], ["Karim", "X-Large", False]]
+customer_data_final = customer_data + new_customer_data
+print(customer_data_final)
